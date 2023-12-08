@@ -17,10 +17,6 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         
-<<<<<<< HEAD
-=======
-      From https://github.com/r-lib/actions/tree/v2-branch/setup-r
->>>>>>> aa9f7021295593de63aee2f5710f3ca2129b7347
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
 
