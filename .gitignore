@@ -47,3 +47,11 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# RStudio project files
+*.Rproj
+
+# Locally rendered Quarto book output
+_book
+
+/.quarto/
