@@ -5,12 +5,16 @@ book:
   title: "Version Control for Data Analysis"
   subtitle: "at Sheffield City Council"
   author: "Laurie Platt"
-  date: "08/12/2023"
+  date: last-modified
+  date-format: "DD MMMM, YYYY"
   chapters:
     - index.qmd
     - intro.qmd
+    - status.qmd
     - summary.qmd
     - references.qmd
+  downloads: pdf
+  favicon: resources/git.svg
 
 bibliography: references.bib
 
