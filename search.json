@@ -14,9 +14,30 @@
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
+    "objectID": "status.html#move-to-azure-devops",
+    "href": "status.html#move-to-azure-devops",
+    "title": "2  Status",
+    "section": "2.1 Move to Azure DevOps",
+    "text": "2.1 Move to Azure DevOps\nThe expectation is that this book, its repo, along with most repos in this GitHub organisation, will move to an Azure DevOps within the Council’s tenancy. Establishing the Council Azure DevOps for data analysis is currently on hold in order to first establish a new data platform."
+  },
+  {
+    "objectID": "status.html#information-management",
+    "href": "status.html#information-management",
+    "title": "2  Status",
+    "section": "2.2 Information Management",
+    "text": "2.2 Information Management\nOnce we move to Azure DevOps we may take advantage of the project management tools. However, for now we’ll keep track of actions on this page.\nPreliminary discussions with the Council’s Information Management team have been held. Below are notes of (italicised) questions raised and (bulleted) actions agreed.\n1. Are there retention schedules for scripts (and their versions)?\nNo. Current housekeeping is to periodically (maybe every 6 month) review the list of GitHub repos (repositories) and archive what’s no longer in use.\n\nFormalise and document proposed housekeeping, including retention schedules.\n\nExtend periodic reviews of repos to include what should be archived, and what should be deleted from the archive.\n\n2. When you publish your data analyses do you indicate anything about the script, its version and a plain English statement?\nEach repository includes, as a minimum, a README.md file with a plain English statement. It will also often include further documentation about the data analysis pipeline. The current version and previous versions are an intrinsic aspect of GitHub and Azure DevOps.\n\nInclude the README.md and documentation requirements in the version control housekeeping documentation.\n\n3. When you publish to GitHub (in future) is it checked? attributed to SCC? and come with a disclaimer?\n\nUnit tests and code reviews are RAP (Reproducible Analytical Pipeline) practices that we’re considering adopting.\n\nOur GitHub repos are held under the scc-pi GitHub organisation and are clearly attributable to SCC.\n\nNeed to consider the different licenses that can be applied to published repos and whether this would cover the disclaimer.\n\nMain action from meeting Information Management:\n\nComplete mini 2-page DPIA and make MW aware. It might sit under the full DPIA of the new Data Platform.\n\nOther actions:\n\nMove GitHub repos to Azure DevOps.\n\nDraft a fit-to-publish (publically on GitHub) checklist.\n\npre-commit checks (scripts) or “hooks” that screen for CSVs, PID, {secrets} (e.g. passwords) etc.\nPublish guidance and tools for annonymising datasets for data analysis to encourage working with PID as only by exception.\n\nProtocols in case of a data breach from incorrect use of version control."
+  },
+  {
+    "objectID": "status.html#other-todos",
+    "href": "status.html#other-todos",
+    "title": "2  Status",
+    "section": "2.3 Other ToDos",
+    "text": "2.3 Other ToDos\n\nMove version control content from pinsheff.\n\nLink to related unmoved pinsheff content.\nNote Version Control Show & Tell e.g. .gitignore /data.\n\nAdd link to Show & Tell once this dpocumentation is moved to Azure DevOps."
+  },
+  {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "3  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
   },
