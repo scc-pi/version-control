@@ -43,6 +43,7 @@ Other actions:
 
 ## Other ToDos
 
+* Replace readme with quarto doc and outline quarto book and github actions
 * Move version control content from pinsheff.  
 * Link to related unmoved pinsheff content.
 * Note Version Control Show & Tell e.g. .gitignore /data.  

@@ -1,9 +1,5 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+This document includes good practice for using version control for data analysis at Sheffield City Council. In particular, it provides suggestions and requirements on how the data being analysed is handled by version control.   
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
-
-```{r}
-1 + 1
-```
+In addition to good practice, the guidance will also provide some pointers on getting started and links to other resources.        

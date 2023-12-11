@@ -1,9 +1,14 @@
 # Introduction
 
-This is a book created from markdown and executable code.
+A show and tell of version control for data analysis was provided for data analysts at Sheffield City Council in August 2023. A recording and the slide deck is available from the Council's Data Network Sharepoint Site.  
 
-See @knuth84 for additional discussion of literate programming.
+## Intended infrastructure  
 
-```{r}
-1 + 1
-```
+![](resources/vc-scc.png)
+
+We intend for the Azure DevOps to be our default for hosting version control repositories. This will enable us to securely share code with all Council Officers. 
+
+Making code open and transparent to everyone, not just other Council Officers, is considered best practice. Making a repository publicly available will be done by publishing it on GitHub, but only if it passes a "fit for publishing" checklist.  
+
+Our adoption of Azure DevOps is currently on hold whilst we setup a new Data Platform. Until then, GitHub remains our current option and is subject to greater information governance considerations.  
+
