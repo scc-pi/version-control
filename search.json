@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Version Control for Data Analysis",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+    "text": "Preface\nThis document includes good practice for using version control for data analysis at Sheffield City Council. In particular, it provides suggestions and requirements on how the data being analysed is handled by version control.\nIn addition to good practice, the guidance will also provide some pointers on getting started and links to other resources."
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
+    "objectID": "intro.html#intended-infrastructure",
+    "href": "intro.html#intended-infrastructure",
     "title": "1  Introduction",
-    "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "section": "1.1 Intended infrastructure",
+    "text": "1.1 Intended infrastructure\n\nWe intend for the Azure DevOps to be our default for hosting version control repositories. This will enable us to securely share code with all Council Officers.\nMaking code open and transparent to everyone, not just other Council Officers, is considered best practice. Making a repository publicly available will be done by publishing it on GitHub, but only if it passes a “fit for publishing” checklist.\nOur adoption of Azure DevOps is currently on hold whilst we setup a new Data Platform. Until then, GitHub remains our current option and is subject to greater information governance considerations."
   },
   {
     "objectID": "status.html#move-to-azure-devops",
@@ -32,7 +32,7 @@
     "href": "status.html#other-todos",
     "title": "2  Status",
     "section": "2.3 Other ToDos",
-    "text": "2.3 Other ToDos\n\nMove version control content from pinsheff.\n\nLink to related unmoved pinsheff content.\nNote Version Control Show & Tell e.g. .gitignore /data.\n\nAdd link to Show & Tell once this dpocumentation is moved to Azure DevOps."
+    "text": "2.3 Other ToDos\n\nReplace readme with quarto doc and outline quarto book and github actions\nMove version control content from pinsheff.\n\nLink to related unmoved pinsheff content.\nNote Version Control Show & Tell e.g. .gitignore /data.\n\nAdd link to Show & Tell once this dpocumentation is moved to Azure DevOps."
   },
   {
     "objectID": "summary.html",
@@ -40,12 +40,5 @@
     "title": "3  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   }
 ]
