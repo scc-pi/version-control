@@ -123,8 +123,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  <a href="./gitignore.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">.gitignore</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -143,7 +143,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#intended-infrastructure" id="toc-intended-infrastructure" class="nav-link active" data-scroll-target="#intended-infrastructure"><span class="header-section-number">1.1</span> Intended infrastructure</a></li>
+  <li><a href="#risks-and-benefits" id="toc-risks-and-benefits" class="nav-link active" data-scroll-target="#risks-and-benefits"><span class="header-section-number">1.1</span> Risks and benefits</a></li>
+  <li><a href="#intended-infrastructure" id="toc-intended-infrastructure" class="nav-link" data-scroll-target="#intended-infrastructure"><span class="header-section-number">1.2</span> Intended infrastructure</a></li>
   </ul>
 </nav>
     </div>
@@ -167,11 +168,16 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>A show and tell of version control for data analysis was provided for data analysts at Sheffield City Council in August 2023. A recording and the slide deck is available from the Council’s Data Network Sharepoint Site.</p>
-<section id="intended-infrastructure" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="intended-infrastructure"><span class="header-section-number">1.1</span> Intended infrastructure</h2>
+<p>A Show and Tell of version control was provided for data analysts at Sheffield City Council in August 2023. A recording and the slide deck is available from the Council’s Data Network Sharepoint Site.</p>
+<section id="risks-and-benefits" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="risks-and-benefits"><span class="header-section-number">1.1</span> Risks and benefits</h2>
+<p>The risks of version control are mainly to do with exposing confidential data, whether it’s commercially sensitive or PID (Personal Identifiable Data). Other risks are noted in the <a href="#checklist">Fit for Publishing Checklist</a></p>
+<p>To understand both the benefits of sharing code and how to manage the risks, we’ll be leaning heavily on resources from: NHS RAP Community of Practice Government Analysis Function Guidance Hub https://analysisfunction.civilservice.gov.uk/policy-store/</p>
+</section>
+<section id="intended-infrastructure" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="intended-infrastructure"><span class="header-section-number">1.2</span> Intended infrastructure</h2>
 <p><img src="resources/vc-scc.png" class="img-fluid"></p>
-<p>We intend for the Azure DevOps to be our default for hosting version control repositories. This will enable us to securely share code with all Council Officers.</p>
+<p>We intend for Azure DevOps to be our default for hosting version control repositories. This will enable us to securely share code with all Council Officers.</p>
 <p>Making code open and transparent to everyone, not just other Council Officers, is considered best practice. Making a repository publicly available will be done by publishing it on GitHub, but only if it passes a “fit for publishing” checklist.</p>
 <p>Our adoption of Azure DevOps is currently on hold whilst we setup a new Data Platform. Until then, GitHub remains our current option and is subject to greater information governance considerations.</p>
 

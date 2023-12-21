@@ -4,14 +4,21 @@
     "href": "index.html",
     "title": "Version Control for Data Analysis",
     "section": "",
-    "text": "Preface\nThis document includes good practice for using version control for data analysis at Sheffield City Council. In particular, it provides suggestions and requirements on how the data being analysed is handled by version control.\nIn addition to good practice, the guidance will also provide some pointers on getting started and links to other resources."
+    "text": "Preface\nThis document includes good practice for using version control for data analysis at Sheffield City Council. In particular, it provides suggestions and requirements on how the data being analysed is handled by version control.\nIn addition to good practice, the guidance will also provide some pointers on getting started and links to other resources.\nIf you’re reading this from the PDF version you can view the online version here scc-pi.github.io/version-control.\nIf you’re reading this from the online version you can view the PDF version via the small Adobe Acrobat icon next to the title in index pane on the left. Or, from here scc-pi.github.io/version-control/Version-Control-for-Data-Analysis.pdf\nHow this guidance is published is detailed in the repository README.md: github.com/scc-pi/version-control#readme"
+  },
+  {
+    "objectID": "intro.html#risks-and-benefits",
+    "href": "intro.html#risks-and-benefits",
+    "title": "1  Introduction",
+    "section": "1.1 Risks and benefits",
+    "text": "1.1 Risks and benefits\nThe risks of version control are mainly to do with exposing confidential data, whether it’s commercially sensitive or PID (Personal Identifiable Data). Other risks are noted in the Fit for Publishing Checklist\nTo understand both the benefits of sharing code and how to manage the risks, we’ll be leaning heavily on resources from: NHS RAP Community of Practice Government Analysis Function Guidance Hub https://analysisfunction.civilservice.gov.uk/policy-store/"
   },
   {
     "objectID": "intro.html#intended-infrastructure",
     "href": "intro.html#intended-infrastructure",
     "title": "1  Introduction",
-    "section": "1.1 Intended infrastructure",
-    "text": "1.1 Intended infrastructure\n\nWe intend for the Azure DevOps to be our default for hosting version control repositories. This will enable us to securely share code with all Council Officers.\nMaking code open and transparent to everyone, not just other Council Officers, is considered best practice. Making a repository publicly available will be done by publishing it on GitHub, but only if it passes a “fit for publishing” checklist.\nOur adoption of Azure DevOps is currently on hold whilst we setup a new Data Platform. Until then, GitHub remains our current option and is subject to greater information governance considerations."
+    "section": "1.2 Intended infrastructure",
+    "text": "1.2 Intended infrastructure\n\nWe intend for Azure DevOps to be our default for hosting version control repositories. This will enable us to securely share code with all Council Officers.\nMaking code open and transparent to everyone, not just other Council Officers, is considered best practice. Making a repository publicly available will be done by publishing it on GitHub, but only if it passes a “fit for publishing” checklist.\nOur adoption of Azure DevOps is currently on hold whilst we setup a new Data Platform. Until then, GitHub remains our current option and is subject to greater information governance considerations."
   },
   {
     "objectID": "status.html#move-to-azure-devops",
@@ -25,7 +32,7 @@
     "href": "status.html#information-management",
     "title": "2  Status",
     "section": "2.2 Information Management",
-    "text": "2.2 Information Management\nOnce we move to Azure DevOps we may take advantage of the project management tools. However, for now we’ll keep track of actions on this page.\nPreliminary discussions with the Council’s Information Management team have been held. Below are notes of (italicised) questions raised and (bulleted) actions agreed.\n1. Are there retention schedules for scripts (and their versions)?\nNo. Current housekeeping is to periodically (maybe every 6 month) review the list of GitHub repos (repositories) and archive what’s no longer in use.\n\nFormalise and document proposed housekeeping, including retention schedules.\n\nExtend periodic reviews of repos to include what should be archived, and what should be deleted from the archive.\n\n2. When you publish your data analyses do you indicate anything about the script, its version and a plain English statement?\nEach repository includes, as a minimum, a README.md file with a plain English statement. It will also often include further documentation about the data analysis pipeline. The current version and previous versions are an intrinsic aspect of GitHub and Azure DevOps.\n\nInclude the README.md and documentation requirements in the version control housekeeping documentation.\n\n3. When you publish to GitHub (in future) is it checked? attributed to SCC? and come with a disclaimer?\n\nUnit tests and code reviews are RAP (Reproducible Analytical Pipeline) practices that we’re considering adopting.\n\nOur GitHub repos are held under the scc-pi GitHub organisation and are clearly attributable to SCC.\n\nNeed to consider the different licenses that can be applied to published repos and whether this would cover the disclaimer.\n\nMain action from meeting Information Management:\n\nComplete mini 2-page DPIA and make MW aware. It might sit under the full DPIA of the new Data Platform.\n\nOther actions:\n\nMove GitHub repos to Azure DevOps.\n\nDraft a fit-to-publish (publically on GitHub) checklist.\n\npre-commit checks (scripts) or “hooks” that screen for CSVs, PID, {secrets} (e.g. passwords) etc.\nPublish guidance and tools for annonymising datasets for data analysis to encourage working with PID as only by exception.\n\nProtocols in case of a data breach from incorrect use of version control."
+    "text": "2.2 Information Management\nOnce we move to Azure DevOps we may take advantage of the project management tools. However, for now we’ll keep track of actions on this page.\nPreliminary discussions with the Council’s Information Management team have been held. Below are notes of (italicised) questions raised and (bulleted) actions agreed.\n1. Are there retention schedules for scripts (and their versions)?\nNo. Current housekeeping is to periodically (maybe every 6 month) review the list of GitHub repos (repositories) and archive what’s no longer in use.\n\nFormalise and document proposed housekeeping, including retention schedules.\n\nExtend periodic reviews of repos to include what should be archived, and what should be deleted from the archive.\n\n2. When you publish your data analyses do you indicate anything about the script, its version and a plain English statement?\nEach repository includes, as a minimum, a README.md file with a plain English statement. It will also often include further documentation about the data analysis pipeline. The current version and previous versions are an intrinsic aspect of GitHub and Azure DevOps.\n\nInclude the README.md and documentation requirements in the version control housekeeping documentation.\n\n3. When you publish to GitHub (in future) is it checked? attributed to SCC? and come with a disclaimer?\n\nUnit tests and code reviews are RAP (Reproducible Analytical Pipeline) practices that we’re considering adopting.\n\nOur GitHub repos are held under the scc-pi GitHub organisation and are clearly attributable to SCC.\n\nNeed to consider the different licenses that can be applied to published repos and whether this would cover the disclaimer.\n\nMain action from meeting Information Management:\n\nComplete mini 2-page DPIA and make MW aware. It might sit under the full DPIA of the new Data Platform.\n\nOther actions:\n\nMove GitHub repos to Azure DevOps.\n\nDraft a fit-to-publish (publically on GitHub) checklist.\n\npre-commit checks (scripts) or “hooks” that screen for CSVs, PID, {secrets} (e.g. passwords) etc.\n\nCode review by another analyst will also lessen the risk of inadvertently including data.\n\nPublish guidance and tools for annonymising datasets for data analysis to encourage working with PID as only by exception.\n\nProtocols in case of a data breach from incorrect use of version control."
   },
   {
     "objectID": "status.html#other-todos",
@@ -33,12 +40,5 @@
     "title": "2  Status",
     "section": "2.3 Other ToDos",
     "text": "2.3 Other ToDos\n\nReplace readme with quarto doc and outline quarto book and github actions\nMove version control content from pinsheff.\n\nLink to related unmoved pinsheff content.\nNote Version Control Show & Tell e.g. .gitignore /data.\n\nAdd link to Show & Tell once this dpocumentation is moved to Azure DevOps."
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "3  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
   }
 ]
