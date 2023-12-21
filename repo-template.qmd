@@ -1,5 +1,7 @@
 # Repository template
 
+We could create an SCC repository template to make consistent project folder structures and `.gitignore` exclusions more convenient.
 
-## ToDo  
+## ToDo
 
+* Consider excluding initial data exploration and data engineering aspects from publishing.  

@@ -1,1 +1,5 @@
 # Training
+
+Version control is not especially difficult, but the risks will be greatest when someone is new to it. The low number of potential users of version control for data analysis means that bespoke Go Learn style training is not justified. Instead, there should be some training from an existing Council user of GitHub. This is in addition to personal responsibility for reading the Council guidance and undertaking specified, openly available, introductory training courses on Git and GitHub.  
+
+## ToDo  

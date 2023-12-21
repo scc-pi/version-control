@@ -1,1 +1,7 @@
-# Anonymise  
+# Anonymise
+
+Where possible the data being analysed should have personal data removed or anonymised. We could better support this with written examples, functions, and packages, that all make it as convenient as possible to anonymise personal data.  
+
+The best way of removing the risk of leaking personal data is not to include it in the data analysis process in the first place. If you're extracting data from a database, don't select the personal data attributes unless it's necessary. If someone is providing a data extract for you, ask them to omit personal data unless it's necessary.  
+
+## ToDo  

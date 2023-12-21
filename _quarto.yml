@@ -7,6 +7,7 @@ book:
   author: "Laurie Platt"
   date: last-modified
   date-format: "DD MMMM, YYYY"
+  repo-url: https://github.com/scc-pi/version-control
   chapters:
     - index.qmd
     - intro.qmd
@@ -16,6 +17,7 @@ book:
     - anonymise.qmd  
     - gitignore.qmd  
     - repo-template.qmd  
+    - git-hooks.qmd  
     - secrets.qmd  
     - publish-check.qmd 
     - github-roles.qmd  
@@ -31,8 +33,7 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt
-
-editor: visual
-
+    #documentclass: krantz
+    
 execute:
   freeze: auto

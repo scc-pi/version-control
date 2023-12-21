@@ -1,0 +1,5 @@
+# Git hooks
+
+Git hooks are scripts that can be set to run locally at specific points in your Git workflow, such as pre-commit. So, we can automate some checks for potential secret or personal data leaks by writing Git hook scripts to scan the contents of files in our version control repository. 
+
+## ToDo

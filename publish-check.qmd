@@ -1,1 +1,5 @@
 # Fit for publishing checklist
+
+We should adopt something similar to the [NHS fit for publishing checklist](https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/#fit-for-publishing-checklist), which includes data protection checks. 
+
+## ToDo 

@@ -1,1 +1,5 @@
-# Code reviews  
+# Code reviews
+
+[Code reviews](https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/code-review/) by a colleague are best practice that we should adopt. Another pair of eyes will reduce the risk of publishing personal data. Other benefits of code reviews include code health and knowledge sharing. We could look at defining some basic questions to cover as a part of a code review and include data protection considerations. The Government’s [Duck Book](https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html) is a good place to start.
+
+## ToDo  
