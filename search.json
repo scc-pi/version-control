@@ -7,25 +7,18 @@
     "text": "Preface\nThis documentation is at an early stage of development.\nThis document includes good practice for using version control for data analysis at Sheffield City Council. In particular, it provides suggestions and requirements on how the data being analysed is handled by version control.\nIn addition to good practice, the guidance will also provide some pointers on getting started and links to other resources.\nIf you’re reading this from the PDF version you can view the online version here:\nscc-pi.github.io/version-control.\nIf you’re reading this from the online version you can view the PDF version via the small Adobe Acrobat icon next to the title in index pane on the left, or by using this URL:\nscc-pi.github.io/version-control/Version-Control-for-Data-Analysis.pdf.\nHow this guidance is published is detailed in the repository README.md:\ngithub.com/scc-pi/version-control#readme\nThe expectation is that this book, its repository, along with most repositories in scc-pi GitHub organisation, will move to Azure DevOps within the Council’s secure Azure Tenant. Establishing the Council Azure DevOps for data analysis is currently on hold whilst a new data platform is established."
   },
   {
-    "objectID": "intro.html#version-control-infrastructure",
-    "href": "intro.html#version-control-infrastructure",
+    "objectID": "intro.html#council-setup",
+    "href": "intro.html#council-setup",
     "title": "1  Introduction",
-    "section": "1.1 Version control infrastructure",
-    "text": "1.1 Version control infrastructure\n\nWe intend for Azure DevOps to be our default for hosting version control repositories. This will enable us to securely share code with data analysts across the Council.\nMaking code open and transparent to everyone, not just other Council Officers, is considered best practice. Making a repository publicly available will be done by publishing it on GitHub, but only if it passes a “fit for publishing” checklist.\nOur adoption of Azure DevOps is currently on hold whilst we setup a new Data Platform. Until then, GitHub remains our current option. GitHub is subject to more data protection considerations, so until Azure DevOps is available version control by more Council data analysts is not being encouraged."
-  },
-  {
-    "objectID": "intro.html#risks-and-benefits",
-    "href": "intro.html#risks-and-benefits",
-    "title": "1  Introduction",
-    "section": "1.2 Risks and benefits",
-    "text": "1.2 Risks and benefits\nThe risks of version control are mainly to do with exposing confidential data, whether it’s commercially sensitive or PID (Personal Identifiable Data). Other risks are noted in the Fit for Publishing Checklist\nTo understand both the benefits of sharing code and how to manage the risks, we’ll be leaning heavily on resources from: NHS RAP Community of Practice Government Analysis Function Guidance Hub"
+    "section": "1.1 Council setup",
+    "text": "1.1 Council setup\nThe intention is for Azure DevOps to be our default for hosting version control repositories. This will enable us to securely share code with data analysts across the Council. Our adoption of Azure DevOps is on hold whilst a new data platform is established.\n\n\n\n\n\n\n\n\nThe diagram on the left is an illustration of the Council’s planned version control setup once both the Data Platform and Azure DevOps are established. It is based on the NHS Digital setup, but they use GitLab in place of Azure DevOps:\nHow to publish your code in the open - RAP Community of Practice (nhsdigital.github.io)\n\n\nMaking code open and transparent to everyone, not just other Council Officers, is considered best practice. The Government’s Digital Service Standard 12th principle states that all publicly funded code should be open, reusable, and available under appropriate licences. The main benefits of publishing your code are increased transparency, collaboration and knowledge sharing across local authorities, external users, and analysts. Knowing that code will be published will lead to overall code health increasing as analysts will take greater care in ensuring that best coding practices and standards are applied.\nMaking a repository publicly available will be done by publishing it on GitHub, but only if it passes a fit for publishing checklist.\nTo understand both the benefits of sharing code and how to manage the risks, we’ll be leaning heavily on resources from:\nNHS RAP Community of Practice Government Analysis Function Guidance Hub"
   },
   {
     "objectID": "intro.html#todo",
     "href": "intro.html#todo",
     "title": "1  Introduction",
-    "section": "1.3 ToDo",
-    "text": "1.3 ToDo\n\nSome form of “Getting Started”, so subsequent content makes sense. Links to other resources and training?\n\nOnce this guidance is moved to Azure DevOps, include Show & Tell URL.\n\nRe-write chapter when Azure DevOps available."
+    "section": "1.2 ToDo",
+    "text": "1.2 ToDo\n\nSome form of “Getting Started”, so subsequent content makes sense. Links to other resources and training?\n\nOnce this guidance is moved to Azure DevOps, include Show & Tell URL.\n\nRe-write chapter when Azure DevOps available."
   },
   {
     "objectID": "data-protection.html#confidentiality-risk",
