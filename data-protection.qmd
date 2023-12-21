@@ -1,0 +1,69 @@
+# Data protection
+
+Using version control for data analysis requires data protection to be front and centre of your considerations, as it has to be with any form of data handling. That said, a lot of the risk mitigation will be undertaken as part of an unobtrusive version control workflow, once the workflow is established and well practised. Our procedures will also prompt for particular data protection considerations at different stages:
+
+1.  Project initiation and repository creation.\
+2.  Code reviews with a colleague.\
+3.  Fit for publishing checklist.
+
+## Confidentiality risk
+
+The principal data protection risk is confidentiality. Confidentiality is defined as unauthorised disclosure of, or access to, personal data.
+
+Version control for data analysis has three types of confidentiality risk. These relate to what a data analyst may inadvertently include in a **public** version control repository:
+
+1.  Data file (e.g. a spreadsheet) with personal data.\
+2.  Some personal data in data analysis output or a script.\
+3.  Secret (e.g. a password) in a script that compromises the security of, for example, a database containing personal data.
+
+These risks are less relevant for SQL scripts than for R and Python scripts, and SQL scripts are more likely for new Council users of version control.
+
+Our Azure DevOps repositories will not be public. Only our GitHub repositories will be public, so the GitHub repositories are the main risk.
+
+## Information Management notes
+
+Once we move to Azure DevOps we may take advantage of the project management tools. However, for now we'll keep track of actions on this page.
+
+Preliminary discussions with the Council's Information Management team have been held. Below are notes of (italicised) questions raised and (bulleted) actions agreed.
+
+*1. Are there retention schedules for scripts (and their versions)?*\
+No. Current housekeeping is to periodically (maybe every 6 month) review the list of GitHub repos (repositories) and archive what's no longer in use.
+
+-   Formalise and document proposed housekeeping, including retention schedules.\
+-   Extend periodic reviews of repos to include what should be archived, and what should be deleted from the archive.
+
+*2. When you publish your data analyses do you indicate anything about the script, its version and a plain English statement?*\
+Each repository includes, as a minimum, a README.md file with a plain English statement. It will also often include further documentation about the data analysis pipeline. The current version and previous versions are an intrinsic aspect of GitHub and Azure DevOps.
+
+-   Include the README.md and documentation requirements in the version control housekeeping documentation.
+
+*3. When you publish to GitHub (in future) is it checked? attributed to SCC? and come with a disclaimer?*
+
+-   Unit tests and code reviews are RAP (Reproducible Analytical Pipeline) practices that we're considering adopting.\
+-   Our GitHub repos are held under the [scc-pi GitHub organisation](https://github.com/scc-pi) and are clearly attributable to SCC.\
+-   Need to consider the different licenses that can be applied to published repos and whether this would cover the disclaimer.
+
+Main action from meeting Information Management:
+
+-   Complete mini 2-page DPIA and make MW aware. It might sit under the full DPIA of the new Data Platform.
+
+Other actions:
+
+-   Move GitHub repos to Azure DevOps.\
+-   Draft a fit-to-publish (publically on GitHub) checklist.\
+-   [pre-commit](https://pre-commit.com/) checks (scripts) or "hooks" that screen for CSVs, PID, {secrets} (e.g. passwords) etc.\
+-   Code review by another analyst will also lessen the risk of inadvertently including data.\
+-   Publish guidance and tools for annonymising datasets for data analysis to encourage working with PID as only by exception.\
+-   Protocols in case of a data breach from incorrect use of version control.
+
+## Other ToDos
+
+-   Replace readme with quarto doc and outline quarto book and github actions??
+-   Move version control content from pinsheff.\
+-   Link to related unmoved pinsheff content.
+-   Note Version Control Show & Tell e.g. .gitignore /data.\
+
+## ToDo
+
+-   What are the connotations of personal data being available to someone in the Council who doesn't need access to it? For example, via Azure DevOps?\
+-   Once this guidance is moved to Azure DevOps, include mini-DPIA PDF download URL.

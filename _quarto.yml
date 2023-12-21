@@ -10,8 +10,16 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - status.qmd
-    - gitignore.qmd
+    - data-protection.qmd  
+    - training.qmd  
+    - code-reviews.qmd  
+    - anonymise.qmd  
+    - gitignore.qmd  
+    - repo-template.qmd  
+    - secrets.qmd  
+    - publish-check.qmd 
+    - github-roles.qmd  
+    - breach-protocol.qmd
     - references.qmd
   downloads: pdf
   favicon: resources/git.svg
