@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Version Control for Data Analysis - 2&nbsp; Status</title>
+<title>Version Control for Data Analysis - 10&nbsp; GitHub roles</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./gitignore.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./breach-protocol.html" rel="next">
+<link href="./publish-check.html" rel="prev">
 <link href="./resources/git.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./status.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Status</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./github-roles.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">GitHub roles</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -117,14 +117,62 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./status.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Status</span></span></a>
+  <a href="./data-protection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data protection</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./training.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Training</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./code-reviews.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Code reviews</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./anonymise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Anonymise</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./gitignore.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">.gitignore</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">.gitignore</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./repo-template.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Repository template</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./secrets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Secrets</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publish-check.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Fit for publishing checklist</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./github-roles.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">GitHub roles</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./breach-protocol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Breach protocol</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -143,9 +191,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#move-to-azure-devops" id="toc-move-to-azure-devops" class="nav-link active" data-scroll-target="#move-to-azure-devops"><span class="header-section-number">2.1</span> Move to Azure DevOps</a></li>
-  <li><a href="#information-management" id="toc-information-management" class="nav-link" data-scroll-target="#information-management"><span class="header-section-number">2.2</span> Information Management</a></li>
-  <li><a href="#other-todos" id="toc-other-todos" class="nav-link" data-scroll-target="#other-todos"><span class="header-section-number">2.3</span> Other ToDos</a></li>
+  <li><a href="#todo" id="toc-todo" class="nav-link active" data-scroll-target="#todo"><span class="header-section-number">10.1</span> ToDo</a></li>
   </ul>
 </nav>
     </div>
@@ -154,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Status</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">GitHub roles</span></h1>
 </div>
 
 
@@ -169,64 +215,12 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This documentation is at a very early stage of development.</p>
-<section id="move-to-azure-devops" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="move-to-azure-devops"><span class="header-section-number">2.1</span> Move to Azure DevOps</h2>
-<p>The expectation is that this book, its repo, along with most repos in this GitHub organisation, will move to an Azure DevOps within the Council’s tenancy. Establishing the Council Azure DevOps for data analysis is currently on hold in order to first establish a new data platform.</p>
-</section>
-<section id="information-management" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="information-management"><span class="header-section-number">2.2</span> Information Management</h2>
-<p>Once we move to Azure DevOps we may take advantage of the project management tools. However, for now we’ll keep track of actions on this page.</p>
-<p>Preliminary discussions with the Council’s Information Management team have been held. Below are notes of (italicised) questions raised and (bulleted) actions agreed.</p>
-<p><em>1. Are there retention schedules for scripts (and their versions)?</em><br>
-No.&nbsp;Current housekeeping is to periodically (maybe every 6 month) review the list of GitHub repos (repositories) and archive what’s no longer in use.</p>
+<section id="todo" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="todo"><span class="header-section-number">10.1</span> ToDo</h2>
 <ul>
-<li>Formalise and document proposed housekeeping, including retention schedules.<br>
+<li><a href="https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization">https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization</a><br>
 </li>
-<li>Extend periodic reviews of repos to include what should be archived, and what should be deleted from the archive.</li>
-</ul>
-<p><em>2. When you publish your data analyses do you indicate anything about the script, its version and a plain English statement?</em><br>
-Each repository includes, as a minimum, a README.md file with a plain English statement. It will also often include further documentation about the data analysis pipeline. The current version and previous versions are an intrinsic aspect of GitHub and Azure DevOps.</p>
-<ul>
-<li>Include the README.md and documentation requirements in the version control housekeeping documentation.</li>
-</ul>
-<p><em>3. When you publish to GitHub (in future) is it checked? attributed to SCC? and come with a disclaimer?</em></p>
-<ul>
-<li>Unit tests and code reviews are RAP (Reproducible Analytical Pipeline) practices that we’re considering adopting.<br>
-</li>
-<li>Our GitHub repos are held under the <a href="https://github.com/scc-pi">scc-pi GitHub organisation</a> and are clearly attributable to SCC.<br>
-</li>
-<li>Need to consider the different licenses that can be applied to published repos and whether this would cover the disclaimer.</li>
-</ul>
-<p>Main action from meeting Information Management:</p>
-<ul>
-<li>Complete mini 2-page DPIA and make MW aware. It might sit under the full DPIA of the new Data Platform.</li>
-</ul>
-<p>Other actions:</p>
-<ul>
-<li>Move GitHub repos to Azure DevOps.<br>
-</li>
-<li>Draft a fit-to-publish (publically on GitHub) checklist.<br>
-</li>
-<li><a href="https://pre-commit.com/">pre-commit</a> checks (scripts) or “hooks” that screen for CSVs, PID, {secrets} (e.g.&nbsp;passwords) etc.<br>
-</li>
-<li>Code review by another analyst will also lessen the risk of inadvertently including data.<br>
-</li>
-<li>Publish guidance and tools for annonymising datasets for data analysis to encourage working with PID as only by exception.<br>
-</li>
-<li>Protocols in case of a data breach from incorrect use of version control.</li>
-</ul>
-</section>
-<section id="other-todos" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="other-todos"><span class="header-section-number">2.3</span> Other ToDos</h2>
-<ul>
-<li>Replace readme with quarto doc and outline quarto book and github actions</li>
-<li>Move version control content from pinsheff.<br>
-</li>
-<li>Link to related unmoved pinsheff content.</li>
-<li>Note Version Control Show &amp; Tell e.g.&nbsp;.gitignore /data.<br>
-</li>
-<li>Add link to Show &amp; Tell once this dpocumentation is moved to Azure DevOps.</li>
+<li><a href="https://docs.github.com/en/code-security/getting-started/best-practices-for-preventing-data-leaks-in-your-organization">https://docs.github.com/en/code-security/getting-started/best-practices-for-preventing-data-leaks-in-your-organization</a></li>
 </ul>
 
 
@@ -468,13 +462,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./publish-check.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Fit for publishing checklist</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./gitignore.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">.gitignore</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./breach-protocol.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Breach protocol</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

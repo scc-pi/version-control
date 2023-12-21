@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Version Control for Data Analysis - 6&nbsp; .gitignore</title>
+<title>Version Control for Data Analysis - 2&nbsp; Data protection</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./repo-template.html" rel="next">
-<link href="./anonymise.html" rel="prev">
+<link href="./training.html" rel="next">
+<link href="./intro.html" rel="prev">
 <link href="./resources/git.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./gitignore.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">.gitignore</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-protection.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data protection</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data-protection.html" class="sidebar-item-text sidebar-link">
+  <a href="./data-protection.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data protection</span></span></a>
   </div>
 </li>
@@ -141,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./gitignore.html" class="sidebar-item-text sidebar-link active">
+  <a href="./gitignore.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">.gitignore</span></span></a>
   </div>
 </li>
@@ -187,14 +187,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#confidentiality-risk" id="toc-confidentiality-risk" class="nav-link active" data-scroll-target="#confidentiality-risk"><span class="header-section-number">2.1</span> Confidentiality risk</a></li>
+  <li><a href="#information-management-notes" id="toc-information-management-notes" class="nav-link" data-scroll-target="#information-management-notes"><span class="header-section-number">2.2</span> Information Management notes</a></li>
+  <li><a href="#other-todos" id="toc-other-todos" class="nav-link" data-scroll-target="#other-todos"><span class="header-section-number">2.3</span> Other ToDos</a></li>
+  <li><a href="#todo" id="toc-todo" class="nav-link" data-scroll-target="#todo"><span class="header-section-number">2.4</span> ToDo</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">.gitignore</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data protection</span></h1>
 </div>
 
 
@@ -209,8 +218,92 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>Using version control for data analysis requires data protection to be front and centre of your considerations, as it has to be with any form of data handling. That said, a lot of the risk mitigation will be undertaken as part of an unobtrusive version control workflow, once the workflow is established and well practised. Our procedures will also prompt for particular data protection considerations at different stages:</p>
+<ol type="1">
+<li>Project initiation and repository creation.<br>
+</li>
+<li>Code reviews with a colleague.<br>
+</li>
+<li>Fit for publishing checklist.</li>
+</ol>
+<section id="confidentiality-risk" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="confidentiality-risk"><span class="header-section-number">2.1</span> Confidentiality risk</h2>
+<p>The principal data protection risk is confidentiality. Confidentiality is defined as unauthorised disclosure of, or access to, personal data.</p>
+<p>Version control for data analysis has three types of confidentiality risk. These relate to what a data analyst may inadvertently include in a <strong>public</strong> version control repository:</p>
+<ol type="1">
+<li>Data file (e.g.&nbsp;a spreadsheet) with personal data.<br>
+</li>
+<li>Some personal data in data analysis output or a script.<br>
+</li>
+<li>Secret (e.g.&nbsp;a password) in a script that compromises the security of, for example, a database containing personal data.</li>
+</ol>
+<p>These risks are less relevant for SQL scripts than for R and Python scripts, and SQL scripts are more likely for new Council users of version control.</p>
+<p>Our Azure DevOps repositories will not be public. Only our GitHub repositories will be public, so the GitHub repositories are the main risk.</p>
+</section>
+<section id="information-management-notes" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="information-management-notes"><span class="header-section-number">2.2</span> Information Management notes</h2>
+<p>Once we move to Azure DevOps we may take advantage of the project management tools. However, for now we’ll keep track of actions on this page.</p>
+<p>Preliminary discussions with the Council’s Information Management team have been held. Below are notes of (italicised) questions raised and (bulleted) actions agreed.</p>
+<p><em>1. Are there retention schedules for scripts (and their versions)?</em><br>
+No.&nbsp;Current housekeeping is to periodically (maybe every 6 month) review the list of GitHub repos (repositories) and archive what’s no longer in use.</p>
+<ul>
+<li>Formalise and document proposed housekeeping, including retention schedules.<br>
+</li>
+<li>Extend periodic reviews of repos to include what should be archived, and what should be deleted from the archive.</li>
+</ul>
+<p><em>2. When you publish your data analyses do you indicate anything about the script, its version and a plain English statement?</em><br>
+Each repository includes, as a minimum, a README.md file with a plain English statement. It will also often include further documentation about the data analysis pipeline. The current version and previous versions are an intrinsic aspect of GitHub and Azure DevOps.</p>
+<ul>
+<li>Include the README.md and documentation requirements in the version control housekeeping documentation.</li>
+</ul>
+<p><em>3. When you publish to GitHub (in future) is it checked? attributed to SCC? and come with a disclaimer?</em></p>
+<ul>
+<li>Unit tests and code reviews are RAP (Reproducible Analytical Pipeline) practices that we’re considering adopting.<br>
+</li>
+<li>Our GitHub repos are held under the <a href="https://github.com/scc-pi">scc-pi GitHub organisation</a> and are clearly attributable to SCC.<br>
+</li>
+<li>Need to consider the different licenses that can be applied to published repos and whether this would cover the disclaimer.</li>
+</ul>
+<p>Main action from meeting Information Management:</p>
+<ul>
+<li>Complete mini 2-page DPIA and make MW aware. It might sit under the full DPIA of the new Data Platform.</li>
+</ul>
+<p>Other actions:</p>
+<ul>
+<li>Move GitHub repos to Azure DevOps.<br>
+</li>
+<li>Draft a fit-to-publish (publically on GitHub) checklist.<br>
+</li>
+<li><a href="https://pre-commit.com/">pre-commit</a> checks (scripts) or “hooks” that screen for CSVs, PID, {secrets} (e.g.&nbsp;passwords) etc.<br>
+</li>
+<li>Code review by another analyst will also lessen the risk of inadvertently including data.<br>
+</li>
+<li>Publish guidance and tools for annonymising datasets for data analysis to encourage working with PID as only by exception.<br>
+</li>
+<li>Protocols in case of a data breach from incorrect use of version control.</li>
+</ul>
+</section>
+<section id="other-todos" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="other-todos"><span class="header-section-number">2.3</span> Other ToDos</h2>
+<ul>
+<li>Replace readme with quarto doc and outline quarto book and github actions??</li>
+<li>Move version control content from pinsheff.<br>
+</li>
+<li>Link to related unmoved pinsheff content.</li>
+<li>Note Version Control Show &amp; Tell e.g.&nbsp;.gitignore /data.<br>
+</li>
+</ul>
+</section>
+<section id="todo" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="todo"><span class="header-section-number">2.4</span> ToDo</h2>
+<ul>
+<li>What are the connotations of personal data being available to someone in the Council who doesn’t need access to it? For example, via Azure DevOps?<br>
+</li>
+<li>Once this guidance is moved to Azure DevOps, include mini-DPIA PDF download URL.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -448,13 +541,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./anonymise.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Anonymise</span></span>
+      <a href="./intro.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./repo-template.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Repository template</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./training.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Training</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

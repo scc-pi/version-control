@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./status.html" rel="next">
+<link href="./data-protection.html" rel="next">
 <link href="./index.html" rel="prev">
 <link href="./resources/git.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -117,14 +117,62 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./status.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Status</span></span></a>
+  <a href="./data-protection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data protection</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./training.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Training</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./code-reviews.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Code reviews</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./anonymise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Anonymise</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./gitignore.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">.gitignore</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">.gitignore</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./repo-template.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Repository template</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./secrets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Secrets</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publish-check.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Fit for publishing checklist</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./github-roles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">GitHub roles</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./breach-protocol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Breach protocol</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -143,8 +191,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#risks-and-benefits" id="toc-risks-and-benefits" class="nav-link active" data-scroll-target="#risks-and-benefits"><span class="header-section-number">1.1</span> Risks and benefits</a></li>
-  <li><a href="#intended-infrastructure" id="toc-intended-infrastructure" class="nav-link" data-scroll-target="#intended-infrastructure"><span class="header-section-number">1.2</span> Intended infrastructure</a></li>
+  <li><a href="#version-control-infrastructure" id="toc-version-control-infrastructure" class="nav-link active" data-scroll-target="#version-control-infrastructure"><span class="header-section-number">1.1</span> Version control infrastructure</a></li>
+  <li><a href="#risks-and-benefits" id="toc-risks-and-benefits" class="nav-link" data-scroll-target="#risks-and-benefits"><span class="header-section-number">1.2</span> Risks and benefits</a></li>
+  <li><a href="#todo" id="toc-todo" class="nav-link" data-scroll-target="#todo"><span class="header-section-number">1.3</span> ToDo</a></li>
   </ul>
 </nav>
     </div>
@@ -169,17 +218,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>A Show and Tell of version control was provided for data analysts at Sheffield City Council in August 2023. A recording and the slide deck is available from the Council’s Data Network Sharepoint Site.</p>
-<section id="risks-and-benefits" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="risks-and-benefits"><span class="header-section-number">1.1</span> Risks and benefits</h2>
-<p>The risks of version control are mainly to do with exposing confidential data, whether it’s commercially sensitive or PID (Personal Identifiable Data). Other risks are noted in the <a href="#checklist">Fit for Publishing Checklist</a></p>
-<p>To understand both the benefits of sharing code and how to manage the risks, we’ll be leaning heavily on resources from: NHS RAP Community of Practice Government Analysis Function Guidance Hub https://analysisfunction.civilservice.gov.uk/policy-store/</p>
-</section>
-<section id="intended-infrastructure" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="intended-infrastructure"><span class="header-section-number">1.2</span> Intended infrastructure</h2>
+<section id="version-control-infrastructure" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="version-control-infrastructure"><span class="header-section-number">1.1</span> Version control infrastructure</h2>
 <p><img src="resources/vc-scc.png" class="img-fluid"></p>
-<p>We intend for Azure DevOps to be our default for hosting version control repositories. This will enable us to securely share code with all Council Officers.</p>
+<p>We intend for Azure DevOps to be our default for hosting version control repositories. This will enable us to securely share code with data analysts across the Council.</p>
 <p>Making code open and transparent to everyone, not just other Council Officers, is considered best practice. Making a repository publicly available will be done by publishing it on GitHub, but only if it passes a “fit for publishing” checklist.</p>
-<p>Our adoption of Azure DevOps is currently on hold whilst we setup a new Data Platform. Until then, GitHub remains our current option and is subject to greater information governance considerations.</p>
+<p>Our adoption of Azure DevOps is currently on hold whilst we setup a new Data Platform. Until then, GitHub remains our current option. GitHub is subject to more data protection considerations, so until Azure DevOps is available version control by more Council data analysts is not being encouraged.</p>
+</section>
+<section id="risks-and-benefits" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="risks-and-benefits"><span class="header-section-number">1.2</span> Risks and benefits</h2>
+<p>The risks of version control are mainly to do with exposing confidential data, whether it’s commercially sensitive or PID (Personal Identifiable Data). Other risks are noted in the <a href="#checklist">Fit for Publishing Checklist</a></p>
+<p>To understand both the benefits of sharing code and how to manage the risks, we’ll be leaning heavily on resources from: <a href="https://analysisfunction.civilservice.gov.uk/policy-store/">NHS RAP Community of Practice Government Analysis Function Guidance Hub</a></p>
+</section>
+<section id="todo" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="todo"><span class="header-section-number">1.3</span> ToDo</h2>
+<ul>
+<li>Some form of “Getting Started”, so subsequent content makes sense. Links to other resources and training?<br>
+</li>
+<li>Once this guidance is moved to Azure DevOps, include Show &amp; Tell URL.<br>
+</li>
+<li>Re-write chapter when Azure DevOps available.</li>
+</ul>
 
 
 </section>
@@ -425,8 +484,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./status.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Status</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./data-protection.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data protection</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
