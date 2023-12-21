@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Version Control for Data Analysis",
     "section": "",
-    "text": "Preface\nThis documentation is at a very early stage of development.\nThis document includes good practice for using version control for data analysis at Sheffield City Council. In particular, it provides suggestions and requirements on how the data being analysed is handled by version control.\nIn addition to good practice, the guidance will also provide some pointers on getting started and links to other resources.\nIf you’re reading this from the PDF version you can view the online version here scc-pi.github.io/version-control.\nIf you’re reading this from the online version you can view the PDF version via the small Adobe Acrobat icon next to the title in index pane on the left, or by using this URL: scc-pi.github.io/version-control/Version-Control-for-Data-Analysis.pdf.\nHow this guidance is published is detailed in the repository README.md: github.com/scc-pi/version-control#readme\nThe expectation is that this book, its repo, along with most repos in this GitHub organisation, will move to an Azure DevOps within the Council’s secure Azure Tenant. Establishing the Council Azure DevOps for data analysis is currently on hold whilst a new data platform is established."
+    "text": "Preface\nThis documentation is at an early stage of development.\nThis document includes good practice for using version control for data analysis at Sheffield City Council. In particular, it provides suggestions and requirements on how the data being analysed is handled by version control.\nIn addition to good practice, the guidance will also provide some pointers on getting started and links to other resources.\nIf you’re reading this from the PDF version you can view the online version here:\nscc-pi.github.io/version-control.\nIf you’re reading this from the online version you can view the PDF version via the small Adobe Acrobat icon next to the title in index pane on the left, or by using this URL:\nscc-pi.github.io/version-control/Version-Control-for-Data-Analysis.pdf.\nHow this guidance is published is detailed in the repository README.md:\ngithub.com/scc-pi/version-control#readme\nThe expectation is that this book, its repository, along with most repositories in scc-pi GitHub organisation, will move to Azure DevOps within the Council’s secure Azure Tenant. Establishing the Council Azure DevOps for data analysis is currently on hold whilst a new data platform is established."
   },
   {
     "objectID": "intro.html#version-control-infrastructure",
@@ -56,31 +56,73 @@
     "text": "2.4 ToDo\n\nWhat are the connotations of personal data being available to someone in the Council who doesn’t need access to it? For example, via Azure DevOps?\n\nOnce this guidance is moved to Azure DevOps, include mini-DPIA PDF download URL."
   },
   {
+    "objectID": "training.html#todo",
+    "href": "training.html#todo",
+    "title": "3  Training",
+    "section": "3.1 ToDo",
+    "text": "3.1 ToDo"
+  },
+  {
+    "objectID": "code-reviews.html#todo",
+    "href": "code-reviews.html#todo",
+    "title": "4  Code reviews",
+    "section": "4.1 ToDo",
+    "text": "4.1 ToDo"
+  },
+  {
+    "objectID": "anonymise.html#todo",
+    "href": "anonymise.html#todo",
+    "title": "5  Anonymise",
+    "section": "5.1 ToDo",
+    "text": "5.1 ToDo"
+  },
+  {
+    "objectID": "gitignore.html#todo",
+    "href": "gitignore.html#todo",
+    "title": "6  .gitignore",
+    "section": "6.1 ToDo",
+    "text": "6.1 ToDo"
+  },
+  {
     "objectID": "repo-template.html#todo",
     "href": "repo-template.html#todo",
     "title": "7  Repository template",
     "section": "7.1 ToDo",
-    "text": "7.1 ToDo"
+    "text": "7.1 ToDo\n\nConsider excluding initial data exploration and data engineering aspects from publishing."
   },
   {
-    "objectID": "secrets.html#todo",
-    "href": "secrets.html#todo",
-    "title": "8  Secrets",
+    "objectID": "git-hooks.html#todo",
+    "href": "git-hooks.html#todo",
+    "title": "8  Git hooks",
     "section": "8.1 ToDo",
     "text": "8.1 ToDo"
   },
   {
+    "objectID": "secrets.html#todo",
+    "href": "secrets.html#todo",
+    "title": "9  Secrets",
+    "section": "9.1 ToDo",
+    "text": "9.1 ToDo"
+  },
+  {
+    "objectID": "publish-check.html#todo",
+    "href": "publish-check.html#todo",
+    "title": "10  Fit for publishing checklist",
+    "section": "10.1 ToDo",
+    "text": "10.1 ToDo"
+  },
+  {
     "objectID": "github-roles.html#todo",
     "href": "github-roles.html#todo",
-    "title": "10  GitHub roles",
-    "section": "10.1 ToDo",
-    "text": "10.1 ToDo\n\nhttps://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization\n\nhttps://docs.github.com/en/code-security/getting-started/best-practices-for-preventing-data-leaks-in-your-organization"
+    "title": "11  GitHub roles",
+    "section": "11.1 ToDo",
+    "text": "11.1 ToDo\n\nhttps://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization\n\nhttps://docs.github.com/en/code-security/getting-started/best-practices-for-preventing-data-leaks-in-your-organization\n\nRetention schedules for repositories."
   },
   {
     "objectID": "breach-protocol.html#todo",
     "href": "breach-protocol.html#todo",
-    "title": "11  Breach protocol",
-    "section": "11.1 ToDo",
-    "text": "11.1 ToDo"
+    "title": "12  Breach protocol",
+    "section": "12.1 ToDo",
+    "text": "12.1 ToDo"
   }
 ]
