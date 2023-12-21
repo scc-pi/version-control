@@ -11,7 +11,7 @@ book:
     - index.qmd
     - intro.qmd
     - status.qmd
-    - summary.qmd
+    - gitignore.qmd
     - references.qmd
   downloads: pdf
   favicon: resources/git.svg

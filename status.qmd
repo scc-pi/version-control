@@ -37,7 +37,8 @@ Other actions:
 
 * Move GitHub repos to Azure DevOps.  
 * Draft a fit-to-publish (publically on GitHub) checklist.  
-* [pre-commit](https://pre-commit.com/) checks (scripts) or "hooks" that screen for CSVs, PID, {secrets} (e.g. passwords) etc.
+* [pre-commit](https://pre-commit.com/) checks (scripts) or "hooks" that screen for CSVs, PID, {secrets} (e.g. passwords) etc.  
+* Code review by another analyst will also lessen the risk of inadvertently including data.  
 * Publish guidance and tools for annonymising datasets for data analysis to encourage working with PID as only by exception.  
 * Protocols in case of a data breach from incorrect use of version control.
 

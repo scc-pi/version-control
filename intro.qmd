@@ -1,12 +1,20 @@
 # Introduction
 
-A show and tell of version control for data analysis was provided for data analysts at Sheffield City Council in August 2023. A recording and the slide deck is available from the Council's Data Network Sharepoint Site.  
+A Show and Tell of version control was provided for data analysts at Sheffield City Council in August 2023. A recording and the slide deck is available from the Council's Data Network Sharepoint Site.  
+
+## Risks and benefits  
+
+The risks of version control are mainly to do with exposing confidential data, whether it's commercially sensitive or PID (Personal Identifiable Data). Other risks are noted in the [Fit for Publishing Checklist](#checklist)
+
+To understand both the benefits of sharing code and how to manage the risks, we'll be leaning heavily on resources from:
+NHS RAP Community of Practice
+Government Analysis Function Guidance Hub https://analysisfunction.civilservice.gov.uk/policy-store/
 
 ## Intended infrastructure  
 
 ![](resources/vc-scc.png)
 
-We intend for the Azure DevOps to be our default for hosting version control repositories. This will enable us to securely share code with all Council Officers. 
+We intend for Azure DevOps to be our default for hosting version control repositories. This will enable us to securely share code with all Council Officers. 
 
 Making code open and transparent to everyone, not just other Council Officers, is considered best practice. Making a repository publicly available will be done by publishing it on GitHub, but only if it passes a "fit for publishing" checklist.  
 

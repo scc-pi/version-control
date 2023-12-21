@@ -3,3 +3,9 @@
 This document includes good practice for using version control for data analysis at Sheffield City Council. In particular, it provides suggestions and requirements on how the data being analysed is handled by version control.   
 
 In addition to good practice, the guidance will also provide some pointers on getting started and links to other resources.        
+
+If you're reading this from the PDF version you can view the online version here [scc-pi.github.io/version-control](https://scc-pi.github.io/version-control/).  
+
+If you're reading this from the online version you can view the PDF version via the small Adobe Acrobat icon next to the title in index pane on the left. Or, from here [scc-pi.github.io/version-control/Version-Control-for-Data-Analysis.pdf](https://scc-pi.github.io/version-control/Version-Control-for-Data-Analysis.pdf)
+
+How this guidance is published is detailed in the repository README.md: [github.com/scc-pi/version-control#readme](https://github.com/scc-pi/version-control#readme)
