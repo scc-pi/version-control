@@ -2,11 +2,11 @@
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 For data files with personal data, the simplest way to ensure they’re not published in a public repository is to store all data files in a `data` sub-folder in the project directory and then exclude the data sub-folder from the Git repository. This is done by specifying the data sub-folder in the `.gitignore` file.  
 :::
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 ![](resources/gitignore.png){fig-align="right"}
 :::
 

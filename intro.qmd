@@ -1,22 +1,46 @@
 # Introduction
 
+It is good practice to use version control with data analysis scripts, SQL, R, Python etc. It facilitates re-use, collaboration, and better-quality analysis output. Version control is a key principle of the RAP (Reproducible Analytical Pipeline) approach that has been adopted in the last few years by [Government](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/) and the [NHS](https://nhsdigital.github.io/rap-community-of-practice/). The vision in the [Government RAP strategy](https://analysisfunction.civilservice.gov.uk/policy-store/reproducible-analytical-pipelines-strategy/) includes: “analytical teams in public sector organisations choose to deliver their analysis using the RAP principles by default”. 
+
+Git is the industry standard open-source distributed version control system. Azure DevOps and GitHub are two Git-based repository hosting services. 
+
+:::: {.columns}
+
+::: {.column width="40%"}
+In the diagram on the right, the dashed line indicates where files are shared from a data analyst’s laptop to a web service like GitHub. It could be Azure DevOps instead of GitHub. Similarly, it could be a Python script instead of an R script, and a different IDE (Interactive Development Environment) like VS Code instead of RStudio. Stage, commit, push, and pull are all Git commands.
+:::
+
+::: {.column width="60%"}
+![](resources/git-repo.png){fig-align="right"}
+:::
+
+::::
+
 A Show and Tell of version control was provided for data analysts at Sheffield City Council in August 2023. A recording and the slide deck is available from the Council's Data Network Sharepoint Site.
 
-## Version control infrastructure
+## Council setup
 
-![](resources/vc-scc.png)
+The intention is for Azure DevOps to be our default for hosting version control repositories. This will enable us to securely share code with data analysts across the Council. Our adoption of Azure DevOps is on hold whilst a new data platform is established. 
 
-We intend for Azure DevOps to be our default for hosting version control repositories. This will enable us to securely share code with data analysts across the Council.
+:::: {.columns}
 
-Making code open and transparent to everyone, not just other Council Officers, is considered best practice. Making a repository publicly available will be done by publishing it on GitHub, but only if it passes a "fit for publishing" checklist.
+::: {.column width="60%"}
+![](resources/vc-scc.png){fig-align="left"}
+:::
 
-Our adoption of Azure DevOps is currently on hold whilst we setup a new Data Platform. Until then, GitHub remains our current option. GitHub is subject to more data protection considerations, so until Azure DevOps is available version control by more Council data analysts is not being encouraged.
+::: {.column width="40%"}
+| The diagram on the left is an illustration of the Council’s planned version control setup once both the Data Platform and Azure DevOps are established. It is based on the NHS Digital setup, but they use GitLab in place of Azure DevOps:  
+| [How to publish your code in the open - RAP Community of Practice (nhsdigital.github.io)](https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/)
+:::
 
-## Risks and benefits
+::::
 
-The risks of version control are mainly to do with exposing confidential data, whether it's commercially sensitive or PID (Personal Identifiable Data). Other risks are noted in the [Fit for Publishing Checklist](#checklist)
+Making code open and transparent to everyone, not just other Council Officers, is considered best practice. The Government's [Digital Service Standard](https://www.gov.uk/service-manual/service-standard) 12th principle states that all publicly funded code should be open, reusable, and available under appropriate licences. The main benefits of publishing your code are increased transparency, collaboration and knowledge sharing across local authorities, external users, and analysts. Knowing that code will be published will lead to overall code health increasing as analysts will take greater care in ensuring that best coding practices and standards are applied.
 
-To understand both the benefits of sharing code and how to manage the risks, we'll be leaning heavily on resources from: [NHS RAP Community of Practice Government Analysis Function Guidance Hub](https://analysisfunction.civilservice.gov.uk/policy-store/)
+Making a repository publicly available will be done by publishing it on GitHub, but only if it passes a fit for publishing checklist.
+
+| To understand both the benefits of sharing code and how to manage the risks, we'll be leaning heavily on resources from:  
+| [NHS RAP Community of Practice Government Analysis Function Guidance Hub](https://analysisfunction.civilservice.gov.uk/policy-store/)
 
 ## ToDo  
 

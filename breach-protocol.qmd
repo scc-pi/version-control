@@ -1,5 +1,8 @@
 # Breach protocol
 
+1. Delete the published repository, having first downloaded the repository to secure Council storage, for example ??  
+1. Report to ??
+
 
 ## ToDo  
 
