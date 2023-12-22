@@ -35,7 +35,8 @@ format:
   pdf:
     documentclass: scrreprt
     #documentclass: krantz
-    mainfont: Arial
+    #mainfont: Arial
+    #need to setup dependencies in GitHub Actions
     papersize: a4
     
 execute:
