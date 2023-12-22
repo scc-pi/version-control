@@ -12,6 +12,7 @@ book:
     - index.qmd
     - intro.qmd
     - data-protection.qmd  
+    - ide-git.qmd
     - training.qmd  
     - code-reviews.qmd  
     - anonymise.qmd  
@@ -34,6 +35,8 @@ format:
   pdf:
     documentclass: scrreprt
     #documentclass: krantz
+    mainfont: Arial
+    papersize: a4
     
 execute:
   freeze: auto

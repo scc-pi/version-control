@@ -1,0 +1,20 @@
+{
+  "hash": "6e68b1970cf09b675863accae42a96aa",
+  "result": {
+    "markdown": "# IDEs & Git\n\nRStudio \n\n## RStudio & GitHub\n\nOur recommendation is to follow these chapters in Happy Git with R:\n\n* [9 Personal access token for HTTPS](https://happygitwithr.com/https-pat.html)   \n* [11 Connect to GitHub](https://happygitwithr.com/push-pull-github.html)  \n* [12 Connect RStudio to Git and GitHub](https://happygitwithr.com/rstudio-git-github.html)  \n\nChapters 15, 16 and 17 of Happy Git with R cover different ways of setting up a local RStudio project connected to GitHub. So far, we’ve stuck with [Chapter 15 New project, GitHub first](https://happygitwithr.com/new-github-first.html.  \n\nTo use GitHub with RStudio there’s a [cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/git-github.pdf) and a thorough step-by-step guide, [Happy Git with R](https://happygitwithr.com/) by Jenny Bryan.\n\n## RStudio & Azure DevOps\n\n## RStudio security & data protection {#pid}\n\n### Workspace {#workspace}\n\nTo encourage reproducible R scripts, Hadley Wickham recommends not preserving your workspace between sessions. This entails deselecting a couple of options to save and restore [.Rdata](https://bookdown.org/ndphillips/YaRrr/rdata-files.html) (see [chapter 8 Workflow: projects](https://r4ds.had.co.nz/workflow-projects.html#what-is-real) in Hadley's R4DS book).\n\nHadley's recommendation also reduces the chances of inadvertently sharing PID in a GitHub repository. However, `.Rdata` should also be included in the [`.gitignore`](https://git-scm.com/docs/gitignore) file and the repository set to private (see the section on [GitHub security & data protection](#github-security)).\n\n### Passwords\n\nIt's poor practice to include login details in code. One option is using the `.Renviron` file for [securing credentials](https://db.rstudio.com/best-practices/managing-credentials/#use-environment-variables). `usethis::edit_r_environ()` will open your user `.Renviron`.\n\nIf you're sharing the script, you can anticipate that the environment variable might not be set and use the RStudio API to prompt for credentials. For example:\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Connect to OSCAR database via ODBC DSN\noscar_con <- DBI::dbConnect(\n  odbc::odbc(),\n  dsn = \"OSCAR\",\n  UID = if (Sys.getenv(\"oscar_userid\") == \"\") {\n    rstudioapi::askForPassword(\"OSCAR User ID\")\n  } else {\n    Sys.getenv(\"oscar_userid\")\n  },\n  PWD = if (Sys.getenv(\"oscar_pwd\") == \"\") {\n    rstudioapi::askForPassword(\"OSCAR Password\")\n  } else {\n    Sys.getenv(\"oscar_pwd\")\n  },\n  timeout = 10\n)\n```\n:::\n\n\n\nNote that including all the connection logic within a single statement works well with the RStudio *Connections* tab. \n\n## ToDo  ",
+    "supporting": [
+      "ide-git_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {
+      "knitr": [
+        "{\"type\":\"list\",\"attributes\":{},\"value\":[]}"
+      ]
+    },
+    "preserve": null,
+    "postProcess": false
+  }
+}

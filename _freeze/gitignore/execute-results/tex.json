@@ -1,0 +1,20 @@
+{
+  "hash": "d27559d48aee38f0d0a560a8a3e1fedb",
+  "result": {
+    "markdown": "# .gitignore\n\n:::: {.columns}\n\n::: {.column width=\"60%\"}\nFor data files with personal data, the simplest way to ensure they’re not published in a public repository is to store all data files in a `/data` sub-folder in the project directory and then exclude the data sub-folder from the Git repository. This is done by specifying the data sub-folder in the `.gitignore` file.  \n:::\n\n::: {.column width=\"40%\"}\n![](resources/gitignore.png){fig-align=\"right\"}\n:::\n\n::::\n\nThe [`.gitignore`](https://git-scm.com/docs/gitignore) file specifies the folders and files you want to exclude from the repository i.e. it lists what you want to ignore. Holding any file based data (e.g. CSV files), whether they're original or transformed, in a `/data` sub-folder, makes it simple to exclude data from the repository by adding the following to the `.gitignore` file:\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# data directory\n/data/\n```\n:::\n\n\n\nAs an additional precaution, any projects involving confidential information should be held in a private repository and [`.Rdata`](https://bookdown.org/ndphillips/YaRrr/rdata-files.html) should also be included in the `.gitignore` file (see the section on [RStudio security & data protection](#pid)):\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Session Data files\n.RData\n```\n:::\n\n\n\n## ToDo  \n\n",
+    "supporting": [
+      "gitignore_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {
+      "knitr": [
+        "{\"type\":\"list\",\"attributes\":{},\"value\":[]}"
+      ]
+    },
+    "preserve": null,
+    "postProcess": false
+  }
+}

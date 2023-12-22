@@ -1,0 +1,43 @@
+# IDEs & Git
+
+Whichever IDE (Interactive Development Environment) you use to make it easier to write your code, it will probably have some integration with Git.   
+
+Broadly speaking, you'll need to install Git and link it to GitHub or Azure DevOps via your IDE.
+
+## RStudio & GitHub
+
+Our experience is mainly with RStudio and GitHub, and we've relied on [Happy Git with R](https://happygitwithr.com/) by [Jenny Bryan](https://jennybryan.org/). In particular we recommend following these chapters:
+
+* [9 Personal access token for HTTPS](https://happygitwithr.com/https-pat.html)   
+* [11 Connect to GitHub](https://happygitwithr.com/push-pull-github.html)  
+* [12 Connect RStudio to Git and GitHub](https://happygitwithr.com/rstudio-git-github.html)  
+
+Chapters 15, 16 and 17 of Happy Git with R cover different ways of setting up a local RStudio project connected to GitHub. So far, we’ve stuck with [Chapter 15 New project, GitHub first](https://happygitwithr.com/new-github-first.html).  
+
+There's also a GitHub with RStudio [cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/git-github.pdf).
+
+## Proxy server  
+
+When out of the office and connected via AlwaysOn VPN, both the HTTPS and SSH connection methods for GitHub and Azure DevOps should work. However, SSH will never work when in the office because the Council's proxy server doesn't support SSH. It works when out of the office because when connected via AlwaysOn VPN, not all traffic is routed via the Council and its proxy server.  
+
+Git needs to be configured to use the Council's proxy server.  
+
+From the Git CMD app you need to run the Git command immediately below. First though, you need to substitute in the command your Council (not your GitHub) username and password, plus the proxy server IP address.
+
+`git config --global http.proxy http://SCC\username:password@proxyip:8080`  
+
+Note: when you update your Council password you'll need to rerun the command with your new password. 
+
+## RStudio workspace
+
+To encourage reproducible R scripts, Hadley Wickham recommends not preserving your workspace between sessions. This entails deselecting a couple of options to save and restore [.Rdata](https://bookdown.org/ndphillips/YaRrr/rdata-files.html) (see [chapter 8 Workflow: projects](https://r4ds.had.co.nz/workflow-projects.html#what-is-real) in Hadley's R4DS book).
+
+Hadley's recommendation also reduces the chances of inadvertently sharing PID in a GitHub repository. However, `.Rdata` should also be included in the [`.gitignore`](https://git-scm.com/docs/gitignore) file and the repository set to private (see the section on [GitHub security & data protection](#github-security)).
+
+## ToDo  
+
+* Update *Proxy server* section this side of Cloud Proxy  
+* Azure DevOps  
+* VS Code  
+* SSMS & Azure Data Studio  
+* GitKraken  
