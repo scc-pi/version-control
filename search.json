@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Version Control for Data Analysis",
     "section": "",
-    "text": "Preface\nThis documentation is at an early stage of development.\nThis document includes good practice for using version control for data analysis at Sheffield City Council. In particular, it provides suggestions and requirements on how the data being analysed is handled by version control.\nIn addition to good practice, the guidance will also provide some pointers on getting started and links to other resources.\nIf you’re reading this from the PDF version you can view the online version here:\nscc-pi.github.io/version-control.\nIf you’re reading this from the online version you can view the PDF version via the small Adobe Acrobat icon next to the title in index pane on the left, or by using this URL:\nscc-pi.github.io/version-control/Version-Control-for-Data-Analysis.pdf.\nHow this guidance is published is detailed in the repository README.md:\ngithub.com/scc-pi/version-control#readme\nThe expectation is that this book, its repository, along with most repositories in scc-pi GitHub organisation, will move to Azure DevOps within the Council’s secure Azure Tenant. Establishing the Council Azure DevOps for data analysis is currently on hold whilst a new data platform is established."
+    "text": "Preface\nThis documentation is at an early stage of development. It includes good practice for using version control for data analysis at Sheffield City Council. In particular, it provides suggestions and requirements on how the data being analysed is handled by version control.\nIn addition to good practice, the guidance will also provide some pointers on getting started and links to other resources.\nIf you’re reading this from the PDF version you can view the online version here:\nscc-pi.github.io/version-control.\nIf you’re reading this from the online version you can view the PDF version via the small Adobe Acrobat icon next to the title in index pane on the left, or by using this URL:\nscc-pi.github.io/version-control/Version-Control-for-Data-Analysis.pdf.\nHow this guidance is published is detailed in the repository README.md:\ngithub.com/scc-pi/version-control#readme\nThe expectation is that this book, its repository, along with most repositories in scc-pi GitHub organisation, will move to Azure DevOps within the Council’s secure Azure Tenant. Establishing the Council Azure DevOps for data analysis is currently on hold whilst a new data platform is established."
   },
   {
     "objectID": "intro.html#council-setup",
@@ -39,7 +39,7 @@
     "href": "data-protection.html#other-todos",
     "title": "2  Data protection",
     "section": "2.3 Other ToDos",
-    "text": "2.3 Other ToDos\n\nReplace readme with quarto doc and outline quarto book and github actions??\nMove version control content from pinsheff.\n\nLink to related unmoved pinsheff content.\nNote Version Control Show & Tell e.g. .gitignore /data."
+    "text": "2.3 Other ToDos\n\nReplace readme with quarto doc and outline quarto book and github actions??\nMove version control content from pinsheff\n\nLink to related unmoved pinsheff content\n\nNote Version Control Show & Tell e.g. .gitignore /data"
   },
   {
     "objectID": "data-protection.html#todo",
@@ -49,73 +49,115 @@
     "text": "2.4 ToDo\n\nWhat are the connotations of personal data being available to someone in the Council who doesn’t need access to it? For example, via Azure DevOps?\n\nOnce this guidance is moved to Azure DevOps, include mini-DPIA PDF download URL."
   },
   {
+    "objectID": "ide-git.html#rstudio-github",
+    "href": "ide-git.html#rstudio-github",
+    "title": "3  IDEs & Git",
+    "section": "3.1 RStudio & GitHub",
+    "text": "3.1 RStudio & GitHub\nOur experience is mainly with RStudio and GitHub, and we’ve relied on Happy Git with R by Jenny Bryan. In particular we recommend following these chapters:\n\n9 Personal access token for HTTPS\n\n11 Connect to GitHub\n\n12 Connect RStudio to Git and GitHub\n\nChapters 15, 16 and 17 of Happy Git with R cover different ways of setting up a local RStudio project connected to GitHub. So far, we’ve stuck with Chapter 15 New project, GitHub first.\nThere’s also a GitHub with RStudio cheatsheet."
+  },
+  {
+    "objectID": "ide-git.html#proxy-server",
+    "href": "ide-git.html#proxy-server",
+    "title": "3  IDEs & Git",
+    "section": "3.2 Proxy server",
+    "text": "3.2 Proxy server\nWhen out of the office and connected via AlwaysOn VPN, both the HTTPS and SSH connection methods for GitHub and Azure DevOps should work. However, SSH will never work when in the office because the Council’s proxy server doesn’t support SSH. It works when out of the office because when connected via AlwaysOn VPN, not all traffic is routed via the Council and its proxy server.\nGit needs to be configured to use the Council’s proxy server.\nFrom the Git CMD app you need to run the Git command immediately below. First though, you need to substitute in the command your Council (not your GitHub) username and password, plus the proxy server IP address.\ngit config --global http.proxy http://SCC\\username:password@proxyip:8080\nNote: when you update your Council password you’ll need to rerun the command with your new password."
+  },
+  {
+    "objectID": "ide-git.html#rstudio-workspace",
+    "href": "ide-git.html#rstudio-workspace",
+    "title": "3  IDEs & Git",
+    "section": "3.3 RStudio workspace",
+    "text": "3.3 RStudio workspace\nTo encourage reproducible R scripts, Hadley Wickham recommends not preserving your workspace between sessions. This entails deselecting a couple of options to save and restore .Rdata (see chapter 8 Workflow: projects in Hadley’s R4DS book).\nHadley’s recommendation also reduces the chances of inadvertently sharing PID in a GitHub repository. However, .Rdata should also be included in the .gitignore file and the repository set to private (see the section on GitHub security & data protection)."
+  },
+  {
+    "objectID": "ide-git.html#todo",
+    "href": "ide-git.html#todo",
+    "title": "3  IDEs & Git",
+    "section": "3.4 ToDo",
+    "text": "3.4 ToDo\n\nUpdate Proxy server section this side of Cloud Proxy\n\nAzure DevOps\n\nVS Code\n\nSSMS & Azure Data Studio\n\nGitKraken"
+  },
+  {
+    "objectID": "training.html#github",
+    "href": "training.html#github",
+    "title": "4  Training",
+    "section": "4.1 GitHub",
+    "text": "4.1 GitHub\nIntroduction to GitHub and GitHub Skills are good places to get started and become familiar with some initial concepts:\ngithub.com/skills/introduction-to-github\nskills.github.com\nVersion Control with Git and SVN, Posit Support\nCh.4 Version control with Git, Building reproducible analytical pipelines with R, by Bruno Rodrigues"
+  },
+  {
     "objectID": "training.html#todo",
     "href": "training.html#todo",
-    "title": "3  Training",
-    "section": "3.1 ToDo",
-    "text": "3.1 ToDo"
+    "title": "4  Training",
+    "section": "4.2 ToDo",
+    "text": "4.2 ToDo"
   },
   {
     "objectID": "code-reviews.html#todo",
     "href": "code-reviews.html#todo",
-    "title": "4  Code reviews",
-    "section": "4.1 ToDo",
-    "text": "4.1 ToDo"
-  },
-  {
-    "objectID": "anonymise.html#todo",
-    "href": "anonymise.html#todo",
-    "title": "5  Anonymise",
+    "title": "5  Code reviews",
     "section": "5.1 ToDo",
     "text": "5.1 ToDo"
   },
   {
-    "objectID": "gitignore.html#todo",
-    "href": "gitignore.html#todo",
-    "title": "6  .gitignore",
+    "objectID": "anonymise.html#todo",
+    "href": "anonymise.html#todo",
+    "title": "6  Anonymise",
     "section": "6.1 ToDo",
     "text": "6.1 ToDo"
   },
   {
+    "objectID": "gitignore.html#todo",
+    "href": "gitignore.html#todo",
+    "title": "7  .gitignore",
+    "section": "7.1 ToDo",
+    "text": "7.1 ToDo"
+  },
+  {
     "objectID": "repo-template.html#todo",
     "href": "repo-template.html#todo",
-    "title": "7  Repository template",
-    "section": "7.1 ToDo",
-    "text": "7.1 ToDo\n\nConsider excluding initial data exploration and data engineering aspects from publishing."
+    "title": "8  Repository template",
+    "section": "8.1 ToDo",
+    "text": "8.1 ToDo\n\nConsider excluding initial data exploration and data engineering aspects from publishing."
   },
   {
     "objectID": "git-hooks.html#todo",
     "href": "git-hooks.html#todo",
-    "title": "8  Git hooks",
-    "section": "8.1 ToDo",
-    "text": "8.1 ToDo"
-  },
-  {
-    "objectID": "secrets.html#todo",
-    "href": "secrets.html#todo",
-    "title": "9  Secrets",
+    "title": "9  Git hooks",
     "section": "9.1 ToDo",
     "text": "9.1 ToDo"
   },
   {
+    "objectID": "secrets.html#passwords-rstudio",
+    "href": "secrets.html#passwords-rstudio",
+    "title": "10  Secrets",
+    "section": "10.1 Passwords & RStudio",
+    "text": "10.1 Passwords & RStudio\nIt’s poor practice to include login details in code. One option is using the .Renviron file for securing credentials. usethis::edit_r_environ() will open your user .Renviron.\nIf you’re sharing the script, you can anticipate that the environment variable might not be set and use the RStudio API to prompt for credentials. For example:\n\n# Connect to OSCAR database via ODBC DSN\noscar_con &lt;- DBI::dbConnect(\n  odbc::odbc(),\n  dsn = \"OSCAR\",\n  UID = if (Sys.getenv(\"oscar_userid\") == \"\") {\n    rstudioapi::askForPassword(\"OSCAR User ID\")\n  } else {\n    Sys.getenv(\"oscar_userid\")\n  },\n  PWD = if (Sys.getenv(\"oscar_pwd\") == \"\") {\n    rstudioapi::askForPassword(\"OSCAR Password\")\n  } else {\n    Sys.getenv(\"oscar_pwd\")\n  },\n  timeout = 10\n)\n\nNote that including all the connection logic within a single statement works well with the RStudio Connections tab."
+  },
+  {
+    "objectID": "secrets.html#todo",
+    "href": "secrets.html#todo",
+    "title": "10  Secrets",
+    "section": "10.2 ToDo",
+    "text": "10.2 ToDo"
+  },
+  {
     "objectID": "publish-check.html#todo",
     "href": "publish-check.html#todo",
-    "title": "10  Fit for publishing checklist",
-    "section": "10.1 ToDo",
-    "text": "10.1 ToDo"
+    "title": "11  Fit for publishing checklist",
+    "section": "11.1 ToDo",
+    "text": "11.1 ToDo"
   },
   {
     "objectID": "github-roles.html#todo",
     "href": "github-roles.html#todo",
-    "title": "11  GitHub roles",
-    "section": "11.1 ToDo",
-    "text": "11.1 ToDo\n\nhttps://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization\n\nhttps://docs.github.com/en/code-security/getting-started/best-practices-for-preventing-data-leaks-in-your-organization\n\nRetention schedules for repositories."
+    "title": "12  GitHub roles",
+    "section": "12.1 ToDo",
+    "text": "12.1 ToDo\n\nhttps://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization\n\nhttps://docs.github.com/en/code-security/getting-started/best-practices-for-preventing-data-leaks-in-your-organization\n\nRetention schedules for repositories.\n\nType of license?"
   },
   {
     "objectID": "breach-protocol.html#todo",
     "href": "breach-protocol.html#todo",
-    "title": "12  Breach protocol",
-    "section": "12.1 ToDo",
-    "text": "12.1 ToDo"
+    "title": "13  Breach protocol",
+    "section": "13.1 ToDo",
+    "text": "13.1 ToDo"
   }
 ]
