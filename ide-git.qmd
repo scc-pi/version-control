@@ -1,6 +1,12 @@
 # IDEs & Git
 
-Whichever IDE (Interactive Development Environment) you use to make it easier to write your code, it will probably have some integration with Git.   
+An IDE (Interactive Development Environment) makes it easier to write code. These are the IDEs we currently use in the Council:  
+
+* SSMS for SQL  
+* RStudio for R  
+* VS Code for Python
+
+The list above is not exhaustive, fixed, or required, just where we're at. All three IDEs integrate with Git.  
 
 Broadly speaking, you'll need to install Git and link it to GitHub or Azure DevOps via your IDE.
 
