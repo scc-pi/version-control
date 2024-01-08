@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Version Control for Data Analysis",
     "section": "",
-    "text": "Preface\nThis documentation is at an early stage of development. It includes good practice for using version control for data analysis at Sheffield City Council. In particular, it provides suggestions and requirements on how the data being analysed is handled by version control.\nIn addition to good practice, the guidance will also provide some pointers on getting started and links to other resources.\nIf you’re reading this from the PDF version you can view the online version here:\nscc-pi.github.io/version-control.\nIf you’re reading this from the online version you can view the PDF version via the small Adobe Acrobat icon next to the title in index pane on the left, or by using this URL:\nscc-pi.github.io/version-control/Version-Control-for-Data-Analysis.pdf.\nHow this guidance is published is detailed in the repository README.md:\ngithub.com/scc-pi/version-control#readme\nThe expectation is that this book, its repository, along with most repositories in scc-pi GitHub organisation, will move to Azure DevOps within the Council’s secure Azure Tenant. Establishing the Council Azure DevOps for data analysis is currently on hold whilst a new data platform is established."
+    "text": "Preface\nThis documentation is at an early stage of development. It includes guidance on using version control for data analysis at Sheffield City Council. In particular, it provides suggestions and requirements on how the data being analysed is handled by version control.\nIf you’re reading this from the PDF version you can view the online version here:\nscc-pi.github.io/version-control.\nIf you’re reading this from the online version you can view the PDF version via the small Adobe Acrobat icon next to the title in index pane on the left, or by using this URL:\nscc-pi.github.io/version-control/Version-Control-for-Data-Analysis.pdf.\nHow this guidance is published is detailed in the repository README.md:\ngithub.com/scc-pi/version-control#readme\nThe expectation is that this book, its repository, along with most repositories in scc-pi GitHub organisation, will move to Azure DevOps within the Council’s secure Azure Tenant. Establishing the Council Azure DevOps for data analysis is currently on hold whilst a new data platform is established."
   },
   {
     "objectID": "intro.html#council-setup",
@@ -67,14 +67,14 @@
     "href": "ide-git.html#rstudio-workspace",
     "title": "3  IDEs & Git",
     "section": "3.3 RStudio workspace",
-    "text": "3.3 RStudio workspace\nTo encourage reproducible R scripts, Hadley Wickham recommends not preserving your workspace between sessions. This entails deselecting a couple of options to save and restore .Rdata (see chapter 8 Workflow: projects in Hadley’s R4DS book).\nHadley’s recommendation also reduces the chances of inadvertently sharing PID in a GitHub repository. However, .Rdata should also be included in the .gitignore file and the repository set to private (see the section on GitHub security & data protection)."
+    "text": "3.3 RStudio workspace\nTo encourage reproducible R scripts, Hadley Wickham recommends not preserving your workspace between sessions. This entails deselecting a couple of options to save and restore .Rdata (see chapter 8 Workflow: projects in Hadley’s R4DS book). Hadley’s recommendation also reduces the chances of inadvertently sharing PID in a GitHub repository. However, .Rdata should also be included in the .gitignore file and the repository set to private (see the section on GitHub security & data protection TODO)."
   },
   {
     "objectID": "ide-git.html#todo",
     "href": "ide-git.html#todo",
     "title": "3  IDEs & Git",
     "section": "3.4 ToDo",
-    "text": "3.4 ToDo\n\nUpdate Proxy server section this side of Cloud Proxy\n\nAzure DevOps\n\nVS Code\n\nSSMS & Azure Data Studio\n\nGitKraken"
+    "text": "3.4 ToDo\n\nURL for GitHub security & data protection link in RStudio workspace section.\n\nUpdate Proxy server section this side of Cloud Proxy\n\nAzure DevOps\n\nVS Code\n\nSSMS & Azure Data Studio\n\nGitKraken"
   },
   {
     "objectID": "training.html#github",
@@ -151,7 +151,7 @@
     "href": "github-roles.html#todo",
     "title": "12  GitHub roles",
     "section": "12.1 ToDo",
-    "text": "12.1 ToDo\n\nhttps://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization\n\nhttps://docs.github.com/en/code-security/getting-started/best-practices-for-preventing-data-leaks-in-your-organization\n\nRetention schedules for repositories.\n\nType of license?"
+    "text": "12.1 ToDo\n\nhttps://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization\n\nhttps://docs.github.com/en/code-security/getting-started/best-practices-for-preventing-data-leaks-in-your-organization\n\nhttps://www.ncsc.gov.uk/collection/developers-collection/principles/protect-your-code-repository\n\nRetention schedules for repositories.\n\nType of license?"
   },
   {
     "objectID": "breach-protocol.html#todo",
