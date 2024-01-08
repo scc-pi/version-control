@@ -1,8 +1,6 @@
 # Preface {.unnumbered}
 
-This documentation is at an early stage of development. It includes good practice for using version control for data analysis at Sheffield City Council. In particular, it provides suggestions and requirements on how the data being analysed is handled by version control.
-
-In addition to good practice, the guidance will also provide some pointers on getting started and links to other resources.
+This documentation is at an early stage of development. It includes guidance on using version control for data analysis at Sheffield City Council. In particular, it provides suggestions and requirements on how the data being analysed is handled by version control.
 
 | If you're reading this from the PDF version you can view the online version here:
 | [scc-pi.github.io/version-control](https://scc-pi.github.io/version-control/).
